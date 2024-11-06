@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Resume Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #000000, #434343);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header {
+            animation: fadeIn 2.5s ease;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background: #ff416c;
+            color: white;
+            padding: 15px 30px;
+	    border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: white;
+	    color: black;
+        }
+
+        .explore-section {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #D3D3D3;
+	    color: black;
+            border-radius: 50px;
+            padding: 50px;
+            width: 250px;
+            margin: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+	    background: white;
+	    color: black;
+            transform: translateY(-10px);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>I, (YOUR NAME)</h1>
+            <p>Web Developer | Designer | Creative Thinker</p>
+	    <p>This is my official portfolio website to show all my details and project details</p>
+            <a href="#explore" class="cta-button">Explore More</a>
+        </header>
+        <section id="explore" class="explore-section">
+            <div class="card">
+                <h2>About</h2>
+                <p>Discover the details about me</p>
+            </div>
+            <div class="card">
+                <h2>Projects</h2>
+                <p>Discover my creative projects</p>
+            </div>
+            <div class="card">
+                <h2>Contact</h2>
+                <p>Please feel free to contact me</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
